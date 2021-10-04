@@ -1,0 +1,51 @@
+/* Change the color of the background */
+body {
+    background-color: rgba(250, 128, 114, 0.308);
+}
+#nav {
+    background-color: white;
+    border: 4px solid olive;
+    padding: 5px;
+    border-radius: 10px;
+    position: fixed;
+}
+u {
+    text-decoration: none;
+    border-bottom: 2px solid black;
+}
+img {
+    display: block;
+    margin:auto;
+}
+/* removes the dot from the list so we can just have the checkbox only */
+ul {
+    list-style-type:none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 200%;
+    font-family:sans-serif;
+}
+
+
+/* Really like the design from Appletri. source: github.com/Appletri/oden-recipes/blob/main/recipes/style.css */
+.content {
+    /* keeps the contnets in the center regardless of window size */
+    margin: auto;
+    /* the padding of the text to the inner box */
+    padding: 3rem;
+    padding-top: 1rem; 
+    padding-bottom: 3rem;
+    /* the margin of the "home" to the box */
+    margin-top: 2rem;
+    /* how much the box takes up */
+    width: max(70%, 400px);
+    border: 4px solid olive;
+    
+    text-align: left;
+    /* how curvy the edges of the inner box are */
+    border-radius: 125px;
+    background-color: white;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.082);
+}

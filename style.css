@@ -1,0 +1,81 @@
+body {
+    background-color: rgba(250, 128, 114, 0.308);
+}
+.header {
+    text-align: center;
+    font-size: 200%;
+    font-family:sans-serif;
+}
+.rcont {
+    text-align: center;
+    /* Centering the div for resize */
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+
+
+}
+u {
+    text-decoration: none;
+    border-bottom: 2px solid black;
+}
+img {
+    border-radius: 25px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.082);
+}
+
+.text {
+    text-align: center;
+    position: absolute;
+    color: black;
+    font-size: 35px;
+    font-family: sans-serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+/* Really like the design from Appletri. source: github.com/Appletri/oden-recipes/blob/main/recipes/style.css */
+.content {
+    /* keeps the contnets in the center regardless of window size */
+    margin: auto;
+    /* the padding of the text to the inner box */
+    padding: 3rem;
+    padding-top: 1rem; 
+    padding-bottom: 3rem;
+    /* the margin of the "home" to the box */
+    margin-top: 2rem;
+    /* how much the box takes up */
+    width: max(70%, 400px);
+    border: 4px solid olive;
+    
+    text-align: left;
+    /* how curvy the edges of the inner box are */
+    border-radius: 125px;
+    background-color: white;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.082);
+}
+
+
+/* Fade in from https://stackoverflow.com/questions/24993999/simplest-way-to-use-css-to-fade-in-an-overlay-block */
+.child {
+    position: relative;
+}
+
+
+.overlay {
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(224, 21, 21, 0.336);
+    opacity:0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease;
+}
+.child:hover .overlay {
+    opacity: 1;
+}
