@@ -37,7 +37,6 @@ img {
     -ms-transform: translate(-50%, -50%);
 }
 
-/* Really like the design from Appletri. source: github.com/Appletri/oden-recipes/blob/main/recipes/style.css */
 .content {
     /* keeps the contnets in the center regardless of window size */
     margin: auto;
